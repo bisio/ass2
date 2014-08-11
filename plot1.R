@@ -10,7 +10,7 @@ logged.emi.data <- lapply(emi.data,log10)
 png("plot1.png")
 title = expression(paste("Global emissions of ",PM[2.5]," from 1999 to 2008"))
 boxplot(logged.emi.data,main=title,xlab="year",
-        ylab=expression(log[10](Emissions)),notch=TRUE,outline=FALSE)
+        ylab=expression(log[10](Emissions)),outline=FALSE)
 dev.off()
 
 
